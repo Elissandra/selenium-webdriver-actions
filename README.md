@@ -19,6 +19,6 @@ Projeto base de Selenium Webdriver e Java da @qazando.
 ## To Run
 
 ```bash
-  mvn test -Dtest=RunCucumber -Dbrowser=chrome cluecumber-report:reporting
+  mvn test -Dtest=RunCucumber -Dbrowser=chrome-ci cluecumber-report:reporting
 
 ```
