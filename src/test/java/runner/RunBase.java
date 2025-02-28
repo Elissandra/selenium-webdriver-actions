@@ -4,14 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import java.util.concurrent.TimeUnit;
 
 public class RunBase {
 
     static WebDriver driver;
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
         return driver;
     }
@@ -37,7 +36,7 @@ public class RunBase {
             case "edge":
                 throw new IllegalArgumentException("Edge ainda nao suportado");
             default:
-                throw new IllegalArgumentException("Navegador não encontrado! Passe um navegador existente: chrome, forefox ou edge.");
+                throw new IllegalArgumentException("Navegador não encontrado! Passe um navegador existente: chrome, firefox ou edge.");
         }
 
         if(driver != null){

@@ -21,5 +21,3 @@ Projeto base de Selenium Webdriver e Java da @qazando.
 ```bash
   mvn test -Dtest=RunCucumber -Dbrowser=chrome cluecumber-report:reporting
 ```
-    
-    

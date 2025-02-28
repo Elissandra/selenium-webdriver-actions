@@ -34,6 +34,7 @@ public class CadastroUsuarioSteps extends RunCucumber {
 
     @Então("^vejo mensagem de usuário cadastrado com sucesso$")
     public void vejo_mensagem_cadastro_sucesso() {
+
         cadastroPage.verificaCadastroSucesso();
     }
 

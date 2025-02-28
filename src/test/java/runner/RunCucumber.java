@@ -12,11 +12,11 @@ import org.junit.runner.RunWith;
         glue = {"steps"},
         tags = {"@login-sucesso"}
 )
-public class RunCucumber extends RunBase{
+public class RunCucumber extends RunBase {
 
     @AfterClass
     public static void stop(){
+
         getDriver().quit();
     }
-
 }

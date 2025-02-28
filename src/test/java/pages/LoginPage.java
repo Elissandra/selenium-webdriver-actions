@@ -22,30 +22,37 @@ public class LoginPage extends RunCucumber {
     }
 
     public void acessarTelaLogin() {
+
         clickElement(botaoAcessarLogin);
     }
 
     public void preencheEmail(String email){
-         fillField(campoEmail, email);
+
+        fillField(campoEmail, email);
     }
 
     public void preencherSenha(String senha){
+
         fillField(campoSenha, senha);
     }
 
     public void clicarLogin(){
+
         clickElement(botaoFazerLogin);
     }
 
     public void verificaLoginSucesso(){
+
         checkMessage(By.id("swal2-title"), "Login realizado");
     }
 
     public void verificaCampoVazio(String message){
+
         checkMessage(By.className("invalid_input"), message);
     }
 
     public void acessarTelaCadastro(){
+
         clickElement(botaoAcessarCadastro);
     }
 
