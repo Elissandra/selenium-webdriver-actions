@@ -1,10 +1,12 @@
 package runner;
 
+import org.junit.rules.Timeout;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
+
 
 public class RunBase {
 
@@ -39,7 +41,7 @@ public class RunBase {
                 throw new IllegalArgumentException("Navegador não encontrado! Passe um navegador existente: chrome, firefox ou edge.");
         }
 
-        if(driver != null){
+        if(driver != null) {
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
 
